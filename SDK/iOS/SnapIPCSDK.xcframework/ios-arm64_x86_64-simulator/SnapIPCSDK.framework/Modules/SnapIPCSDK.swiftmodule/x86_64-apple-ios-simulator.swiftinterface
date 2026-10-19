@@ -1,0 +1,27 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name SnapIPCSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+import Foundation
+@_exported import SnapIPCSDK
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum SnapHaloFirmwareUploadStatus {
+  case reading
+  case validating
+  case uploading(Swift::Int)
+  case applying
+  case rebooting
+  case confirming
+  case completed
+  case canceled
+  case failed(Swift::String)
+}
+@objc final public class SnapHaloFirmwareUploader : ObjectiveC::NSObject {
+  public init(onStatus: @escaping (SnapIPCSDK::SnapHaloFirmwareUploadStatus) -> Swift::Void)
+  final public func upload(fileURL: Foundation::URL, peripheralIdentifier: Foundation::UUID) throws
+  final public func cancel()
+  @objc deinit
+}

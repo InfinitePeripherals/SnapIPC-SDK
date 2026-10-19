@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.ipcmobile.snapipc",
+    "module": "snapipc-sdk-android",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity-ktx",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "snapipc-sdk-android-1.0.0.aar",
+          "url": "snapipc-sdk-android-1.0.0.aar",
+          "size": 331916,
+          "sha512": "b5ef2f956f19137dacfa14989307303c3fcf8a8b60c0bdca3244be1e2a733eb6a9478b7264ae8fbc7427cd9c4dc2e79d4f2a17d68cc8235b847059bb6f827f11",
+          "sha256": "70304d195d20d1718085915ab73f1e7744a7bf3b9a48d71daf52881dbd62001a",
+          "sha1": "dd6613b6771563189a1ca7878dfd756486f5d1e3",
+          "md5": "861d03c839a866a653f674429751b872"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.activity",
+          "module": "activity-ktx",
+          "version": {
+            "requires": "1.10.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.1.20"
+          }
+        },
+        {
+          "group": "no.nordicsemi.android",
+          "module": "mcumgr-ble",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson",
+          "module": "jackson-bom",
+          "version": {
+            "requires": "2.18.11"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.36.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "snapipc-sdk-android-1.0.0.aar",
+          "url": "snapipc-sdk-android-1.0.0.aar",
+          "size": 331916,
+          "sha512": "b5ef2f956f19137dacfa14989307303c3fcf8a8b60c0bdca3244be1e2a733eb6a9478b7264ae8fbc7427cd9c4dc2e79d4f2a17d68cc8235b847059bb6f827f11",
+          "sha256": "70304d195d20d1718085915ab73f1e7744a7bf3b9a48d71daf52881dbd62001a",
+          "sha1": "dd6613b6771563189a1ca7878dfd756486f5d1e3",
+          "md5": "861d03c839a866a653f674429751b872"
+        }
+      ]
+    }
+  ]
+}

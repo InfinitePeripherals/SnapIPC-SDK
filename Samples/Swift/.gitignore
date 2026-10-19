@@ -1,0 +1,7 @@
+build/
+Frameworks/
+SnapIPCNative.xcodeproj/
+Info.plist
+.DS_Store
+.swiftpm/
+xcuserdata/

@@ -1,0 +1,10 @@
+framework module SnapIPCSDK {
+  umbrella header "SnapIPCSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module SnapIPCSDK.Swift {
+  header "SnapIPCSDK-Swift.h"
+}

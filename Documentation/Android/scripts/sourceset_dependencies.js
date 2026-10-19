@@ -1,0 +1,1 @@
+sourceset_dependencies='{":snapipc-sdk/androidMain":[":snapipc-sdk/commonMain"],":snapipc-sdk/commonMain":[]}'

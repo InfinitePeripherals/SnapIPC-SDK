@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IBarcodeReader</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    SnapIPC Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
+                        data-filter=":snapipc-sdk/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":snapipc-sdk/commonMain"
+                                       data-filter=":snapipc-sdk/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    SnapIPC Android SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="SnapIPC Android SDK::com.ipcmobile.snapipcsdk.interfaces/IBarcodeReader///PointingToDeclaration//-755235848">
+  <div class="breadcrumbs"><a href="../../../index.html">SnapIPC Android SDK</a><span class="delimiter">/</span><a href="../index.html">com.ipcmobile.snapipcsdk.interfaces</a><span class="delimiter">/</span><span class="current">IBarcodeReader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>IBarcode</span><wbr></wbr><span><span>Reader</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">IBarcodeReader</a></div><p class="paragraph">Barcode controls. Writes complete on BLE delivery, not firmware acknowledgement; failures throw. Queries use a fixed three-second timeout, including time waiting for other commands.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-127849638%2FProperties%2F-755235848" anchor-label="diagnostics" id="-127849638%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="diagnostics.html"><span><span>diagnostics</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-127849638%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="diagnostics.html">diagnostics</a><span class="token operator">: </span><a href="../-i-diagnostics/index.html">IDiagnostics</a></div><div class="brief "><p class="paragraph">Read-only scan-engine identity and diagnostics.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="420656860%2FProperties%2F-755235848" anchor-label="images" id="420656860%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="images.html"><span><span>images</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="420656860%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="images.html">images</a><span class="token operator">: </span><a href="../-i-images/index.html">IImages</a></div><div class="brief "><p class="paragraph">Stored-image retrieval and new image capture from the scan engine.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-182571090%2FProperties%2F-755235848" anchor-label="imaging" id="-182571090%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="imaging.html"><span><span>imaging</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-182571090%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="imaging.html">imaging</a><span class="token operator">: </span><a href="../-i-imaging/index.html">IImaging</a></div><div class="brief "><p class="paragraph">Current-session scan-engine lighting, exposure, sleep, and decoding controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="712718592%2FProperties%2F-755235848" anchor-label="isTriggerPressed" id="712718592%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-trigger-pressed.html"><span>is</span><wbr></wbr><span>Trigger</span><wbr></wbr><span><span>Pressed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="712718592%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="is-trigger-pressed.html">isTriggerPressed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Last reported trigger state.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1630186200%2FProperties%2F-755235848" anchor-label="ocr" id="-1630186200%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ocr.html"><span><span>ocr</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1630186200%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="ocr.html">ocr</a><span class="token operator">: </span><a href="../-i-ocr/index.html">IOcr</a></div><div class="brief "><p class="paragraph">OCR mode/template readback and custom user-template controls.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1475935011%2FProperties%2F-755235848" anchor-label="symbology" id="-1475935011%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="symbology.html"><span><span>symbology</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1475935011%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">val </span><a href="symbology.html">symbology</a><span class="token operator">: </span><a href="../-i-symbology/index.html">ISymbology</a></div><div class="brief "><p class="paragraph">Current-session Honeywell HSM flags and accepted lengths for individual formats.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-750117515%2FFunctions%2F-755235848" anchor-label="getFirmware" id="-750117515%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-firmware.html"><span>get</span><wbr></wbr><span><span>Firmware</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-750117515%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-firmware.html"><span class="token function">getFirmware</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Requests scan-engine firmware; throws on timeout, disconnection or invalid response.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-449279728%2FFunctions%2F-755235848" anchor-label="getScanMode" id="-449279728%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-scan-mode.html"><span>get</span><wbr></wbr><span>Scan</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-449279728%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-scan-mode.html"><span class="token function">getScanMode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.ipcmobile.snapipcsdk.models/-barcode-scan-mode/index.html">BarcodeScanMode</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Reads the current device setting, or null for an unknown firmware mode.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1195668440%2FFunctions%2F-755235848" anchor-label="getSymobologies" id="-1195668440%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-symobologies.html"><span>get</span><wbr></wbr><span><span>Symobologies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1195668440%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="get-symobologies.html"><span class="token function">getSymobologies</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><a href="../../com.ipcmobile.snapipcsdk.models/-scanner-symbology/index.html">ScannerSymbology</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Reads enabled states for all individually supported formats from the scanner. Excludes deprecated formats and control values such as All. Throws on query failure or timeout. Every call requests a fresh device-details snapshot; this does not use cached settings. Queries have a fixed three-second timeout, including time waiting for other commands.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="929216447%2FFunctions%2F-755235848" anchor-label="setBeepOnScan" id="929216447%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-beep-on-scan.html"><span>set</span><wbr></wbr><span>Beep</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="929216447%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-beep-on-scan.html"><span class="token function">setBeepOnScan</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enables or disables the beep after a successful scan.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="114599083%2FFunctions%2F-755235848" anchor-label="setCenteringMode" id="114599083%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-centering-mode.html"><span>set</span><wbr></wbr><span>Centering</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="114599083%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-centering-mode.html"><span class="token function">setCenteringMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enables or disables the decoder centering window.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1278509809%2FFunctions%2F-755235848" anchor-label="setContinuousScanInterval" id="1278509809%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-continuous-scan-interval.html"><span>set</span><wbr></wbr><span>Continuous</span><wbr></wbr><span>Scan</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1278509809%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-continuous-scan-interval.html"><span class="token function">setContinuousScanInterval</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">intervalMs<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the continuous-mode scan interval in milliseconds (0..65535). Call after <a href="set-scan-mode.html">setScanMode</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-337659520%2FFunctions%2F-755235848" anchor-label="setEnableAllSymbologies" id="-337659520%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-enable-all-symbologies.html"><span>set</span><wbr></wbr><span>Enable</span><wbr></wbr><span>All</span><wbr></wbr><span><span>Symbologies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-337659520%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-enable-all-symbologies.html"><span class="token function">setEnableAllSymbologies</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enables or disables all barcode formats through the firmware master toggle. Completes on BLE write. Use <a href="get-symobologies.html">getSymobologies</a> to read the device's reported states.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1573917764%2FFunctions%2F-755235848" anchor-label="setOcrModeTemplate" id="-1573917764%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ocr-mode-template.html"><span>set</span><wbr></wbr><span>Ocr</span><wbr></wbr><span>Mode</span><wbr></wbr><span><span>Template</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1573917764%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-ocr-mode-template.html"><span class="token function">setOcrModeTemplate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../../com.ipcmobile.snapipcsdk.models/-ocr-mode/index.html">OcrMode</a><span class="token punctuation">, </span></span><span class="parameter ">templateMask<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets OCR polarity and template flags; passport must be used alone.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1760358603%2FFunctions%2F-755235848" anchor-label="setScanEnginePower" id="-1760358603%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-scan-engine-power.html"><span>set</span><wbr></wbr><span>Scan</span><wbr></wbr><span>Engine</span><wbr></wbr><span><span>Power</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1760358603%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-scan-engine-power.html"><span class="token function">setScanEnginePower</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">on<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Powers the scan engine on or off while leaving the BLE link active.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1829639993%2FFunctions%2F-755235848" anchor-label="setScanMode" id="1829639993%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-scan-mode.html"><span>set</span><wbr></wbr><span>Scan</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1829639993%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-scan-mode.html"><span class="token function">setScanMode</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mode<span class="token operator">: </span><a href="../../com.ipcmobile.snapipcsdk.models/-barcode-scan-mode/index.html">BarcodeScanMode</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets scan mode; continuous modes also set the scan interval to 100 ms.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1657518461%2FFunctions%2F-755235848" anchor-label="setSymbology" id="1657518461%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-symbology.html"><span>set</span><wbr></wbr><span><span>Symbology</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1657518461%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-symbology.html"><span class="token function">setSymbology</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">symbology<span class="token operator">: </span><a href="../../com.ipcmobile.snapipcsdk.models/-scanner-symbology/index.html">ScannerSymbology</a><span class="token punctuation">, </span></span><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enables or disables one format from <a href="../../com.ipcmobile.snapipcsdk.models/-scanner-symbology/-companion/-supported.html">ScannerSymbology.Supported</a>. For the master toggle, use <a href="set-enable-all-symbologies.html">setEnableAllSymbologies</a>. Completes on BLE write; use <a href="get-symobologies.html">getSymobologies</a> to read the scanner's reported settings afterward.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1391429552%2FFunctions%2F-755235848" anchor-label="setVibrateOnScan" id="1391429552%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-vibrate-on-scan.html"><span>set</span><wbr></wbr><span>Vibrate</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1391429552%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="set-vibrate-on-scan.html"><span class="token function">setVibrateOnScan</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Enables or disables vibration after a successful scan.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1671600295%2FFunctions%2F-755235848" anchor-label="startScan" id="1671600295%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-scan.html"><span>start</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1671600295%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="start-scan.html"><span class="token function">startScan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Presses the scanner trigger. Pair with <a href="stop-scan.html">stopScan</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1819211819%2FFunctions%2F-755235848" anchor-label="stopScan" id="-1819211819%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stop-scan.html"><span>stop</span><wbr></wbr><span><span>Scan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1819211819%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="stop-scan.html"><span class="token function">stopScan</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Releases the scanner trigger.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

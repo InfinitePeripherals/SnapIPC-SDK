@@ -1,0 +1,49 @@
+name: SnapIPCNative
+options:
+  bundleIdPrefix: com.ipcmobile.snapipc.native
+  usesTabs: false
+  indentWidth: 4
+  defaultConfig: Debug
+settings:
+  MARKETING_VERSION: "1.0"
+  CURRENT_PROJECT_VERSION: "1"
+  CODE_SIGN_STYLE: Automatic
+  ENABLE_USER_SCRIPT_SANDBOXING: NO
+targets:
+  SnapIPCNative:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.ipcmobile.snapipc.native
+      PRODUCT_NAME: SnapIPC
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+      CODE_SIGN_ENTITLEMENTS: SnapIPCNative.entitlements
+      SWIFT_VERSION: "5.0"
+      TARGETED_DEVICE_FAMILY: "1,2"
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: SnapIPC
+        LSRequiresIPhoneOS: true
+        com.apple.developer.nfc.readersession.iso7816.select-identifiers:
+          - D2760000850101
+        NFCReaderUsageDescription: SnapIPC reads the scanner pairing tag to identify the correct Bluetooth device.
+        NSBluetoothAlwaysUsageDescription: SnapIPC uses Bluetooth to connect to and receive scans from your ring scanner.
+        NSBluetoothPeripheralUsageDescription: SnapIPC uses Bluetooth to connect to and receive scans from your ring scanner.
+        UIBackgroundModes:
+          - bluetooth-central
+        UILaunchScreen:
+          UIColorName: SnapIPCSplash
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+    sources:
+      - path: Sources
+        buildPhase: sources
+      - path: Resources
+        buildPhase: resources
+    dependencies:
+      - framework: ../../SDK/iOS/SnapIPCSDK.xcframework
+        embed: true

@@ -1,0 +1,1 @@
+sourceset_dependencies='{":snapipc-sdk/appleMain":[":snapipc-sdk/nativeMain"],":snapipc-sdk/commonMain":[],":snapipc-sdk/iosMain":[":snapipc-sdk/appleMain"],":snapipc-sdk/nativeMain":[":snapipc-sdk/commonMain"]}'

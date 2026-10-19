@@ -1,0 +1,707 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "SnapIPCSDK",
+    "printedName": "SnapIPCSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SnapIPCSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "iOSMcuManagerLibrary",
+        "printedName": "iOSMcuManagerLibrary",
+        "declKind": "Import",
+        "moduleName": "SnapIPCSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ZIPFoundation",
+        "printedName": "ZIPFoundation",
+        "declKind": "Import",
+        "moduleName": "SnapIPCSDK",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SnapHaloFirmwareUploadStatus",
+        "printedName": "SnapHaloFirmwareUploadStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reading",
+            "printedName": "reading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO7readingyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO7readingyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "validating",
+            "printedName": "validating",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO10validatingyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO10validatingyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uploading",
+            "printedName": "uploading",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> (Swift.Int) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO9uploadingyACSicACmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO9uploadingyACSicACmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applying",
+            "printedName": "applying",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO8applyingyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO8applyingyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rebooting",
+            "printedName": "rebooting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO9rebootingyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO9rebootingyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirming",
+            "printedName": "confirming",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO10confirmingyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO10confirmingyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO9completedyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO9completedyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "canceled",
+            "printedName": "canceled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO8canceledyA2CmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO8canceledyA2CmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type) -> (Swift.String) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SnapHaloFirmwareUploadStatus",
+                        "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO6failedyACSScACmF",
+            "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO6failedyACSScACmF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO",
+        "mangledName": "$s10SnapIPCSDK0A24HaloFirmwareUploadStatusO",
+        "moduleName": "SnapIPCSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SnapHaloFirmwareUploader",
+        "printedName": "SnapHaloFirmwareUploader",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(onStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SnapHaloFirmwareUploader",
+                "printedName": "SnapIPCSDK.SnapHaloFirmwareUploader",
+                "usr": "c:@M@SnapIPCSDK@objc(cs)SnapHaloFirmwareUploader"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SnapIPCSDK.SnapHaloFirmwareUploadStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SnapHaloFirmwareUploadStatus",
+                    "printedName": "SnapIPCSDK.SnapHaloFirmwareUploadStatus",
+                    "usr": "s:10SnapIPCSDK0A24HaloFirmwareUploadStatusO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10SnapIPCSDK0A20HaloFirmwareUploaderC8onStatusACyAA0acd6UploadG0Oc_tcfc",
+            "mangledName": "$s10SnapIPCSDK0A20HaloFirmwareUploaderC8onStatusACyAA0acd6UploadG0Oc_tcfc",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "upload",
+            "printedName": "upload(fileURL:peripheralIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SnapIPCSDK0A20HaloFirmwareUploaderC6upload7fileURL20peripheralIdentifiery10Foundation0H0V_AG4UUIDVtKF",
+            "mangledName": "$s10SnapIPCSDK0A20HaloFirmwareUploaderC6upload7fileURL20peripheralIdentifiery10Foundation0H0V_AG4UUIDVtKF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10SnapIPCSDK0A20HaloFirmwareUploaderC6cancelyyF",
+            "mangledName": "$s10SnapIPCSDK0A20HaloFirmwareUploaderC6cancelyyF",
+            "moduleName": "SnapIPCSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SnapHaloFirmwareUploader",
+                "printedName": "SnapIPCSDK.SnapHaloFirmwareUploader",
+                "usr": "c:@M@SnapIPCSDK@objc(cs)SnapHaloFirmwareUploader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SnapIPCSDK@objc(cs)SnapHaloFirmwareUploader(im)init",
+            "mangledName": "$s10SnapIPCSDK0A20HaloFirmwareUploaderCACycfc",
+            "moduleName": "SnapIPCSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SnapIPCSDK@objc(cs)SnapHaloFirmwareUploader",
+        "mangledName": "$s10SnapIPCSDK0A20HaloFirmwareUploaderC",
+        "moduleName": "SnapIPCSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1191,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1196,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1203,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1255,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1305,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/anton\/Projects\/HaloSnap-KotlinMP\/build\/ios-combined-framework\/Sources\/SnapHaloFirmwareUploader.swift",
+      "kind": "FloatLiteral",
+      "offset": 1359,
+      "length": 5,
+      "value": "120.0"
+    }
+  ]
+}

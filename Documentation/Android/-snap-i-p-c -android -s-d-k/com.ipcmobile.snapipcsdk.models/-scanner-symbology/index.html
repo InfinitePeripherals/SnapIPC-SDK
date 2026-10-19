@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ScannerSymbology</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    SnapIPC Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector common-like" data-active="" aria-pressed="true"
+                        data-filter=":snapipc-sdk/commonMain">common</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option common-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":snapipc-sdk/commonMain"
+                                       data-filter=":snapipc-sdk/commonMain"/>
+                                <span class="checkbox--icon"></span>
+                                common
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    SnapIPC Android SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="SnapIPC Android SDK::com.ipcmobile.snapipcsdk.models/ScannerSymbology///PointingToDeclaration//-755235848">
+  <div class="breadcrumbs"><a href="../../../index.html">SnapIPC Android SDK</a><span class="delimiter">/</span><a href="../index.html">com.ipcmobile.snapipcsdk.models</a><span class="delimiter">/</span><span class="current">ScannerSymbology</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Scanner</span><wbr></wbr><span><span>Symbology</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">ScannerSymbology</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="index.html">ScannerSymbology</a><span class="token operator">&gt; </span></div><p class="paragraph">Barcode formats understood by the scanner firmware.</p><p class="paragraph"><a href="id.html">id</a> is the byte used by the enable/disable command. It is different from the Honeywell code returned with a decoded barcode.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="tableheader">Entries</h2>
+        <div class="table"><a data-name="1562609326%2FClasslikes%2F-755235848" anchor-label="SYM_AZTEC" id="1562609326%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-a-z-t-e-c/index.html">SYM_AZTEC</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1562609326%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-a-z-t-e-c/index.html">SYM_AZTEC</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-664966401%2FClasslikes%2F-755235848" anchor-label="SYM_CODABAR" id="-664966401%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-a-b-a-r/index.html">SYM_CODABAR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-664966401%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-a-b-a-r/index.html">SYM_CODABAR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-495854592%2FClasslikes%2F-755235848" anchor-label="SYM_CODE11" id="-495854592%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e11/index.html">SYM_CODE11</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-495854592%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e11/index.html">SYM_CODE11</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1598286527%2FClasslikes%2F-755235848" anchor-label="SYM_CODE128" id="1598286527%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e128/index.html">SYM_CODE128</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1598286527%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e128/index.html">SYM_CODE128</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1476318662%2FClasslikes%2F-755235848" anchor-label="SYM_CODE39" id="1476318662%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e39/index.html">SYM_CODE39</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1476318662%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e39/index.html">SYM_CODE39</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1183932837%2FClasslikes%2F-755235848" anchor-label="SYM_CODE49" id="1183932837%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e49/index.html">SYM_CODE49</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1183932837%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e49/index.html">SYM_CODE49</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1025520506%2FClasslikes%2F-755235848" anchor-label="SYM_CODE93" id="1025520506%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e93/index.html">SYM_CODE93</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1025520506%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e93/index.html">SYM_CODE93</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995047164%2FClasslikes%2F-755235848" anchor-label="SYM_COMPOSITE" id="995047164%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-m-p-o-s-i-t-e/index.html">SYM_COMPOSITE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995047164%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-m-p-o-s-i-t-e/index.html">SYM_COMPOSITE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-919565538%2FClasslikes%2F-755235848" anchor-label="SYM_DATAMATRIX" id="-919565538%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-d-a-t-a-m-a-t-r-i-x/index.html">SYM_DATAMATRIX</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-919565538%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-d-a-t-a-m-a-t-r-i-x/index.html">SYM_DATAMATRIX</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="585996409%2FClasslikes%2F-755235848" anchor-label="SYM_EAN8" id="585996409%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-e-a-n8/index.html">SYM_EAN8</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="585996409%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-e-a-n8/index.html">SYM_EAN8</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2053796137%2FClasslikes%2F-755235848" anchor-label="SYM_EAN13" id="2053796137%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-e-a-n13/index.html">SYM_EAN13</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2053796137%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-e-a-n13/index.html">SYM_EAN13</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-365939161%2FClasslikes%2F-755235848" anchor-label="SYM_INT25" id="-365939161%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-i-n-t25/index.html">SYM_INT25</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-365939161%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-i-n-t25/index.html">SYM_INT25</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1124357211%2FClasslikes%2F-755235848" anchor-label="SYM_MAXICODE" id="-1124357211%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-m-a-x-i-c-o-d-e/index.html">SYM_MAXICODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1124357211%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-m-a-x-i-c-o-d-e/index.html">SYM_MAXICODE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="352144225%2FClasslikes%2F-755235848" anchor-label="SYM_MICROPDF" id="352144225%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-m-i-c-r-o-p-d-f/index.html">SYM_MICROPDF</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="352144225%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-m-i-c-r-o-p-d-f/index.html">SYM_MICROPDF</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1580856339%2FClasslikes%2F-755235848" anchor-label="SYM_OCR" id="1580856339%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-o-c-r/index.html">SYM_OCR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1580856339%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-o-c-r/index.html">SYM_OCR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1076546245%2FClasslikes%2F-755235848" anchor-label="SYM_PDF417" id="-1076546245%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-d-f417/index.html">SYM_PDF417</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1076546245%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-d-f417/index.html">SYM_PDF417</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1119834318%2FClasslikes%2F-755235848" anchor-label="SYM_POSTNET" id="-1119834318%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-o-s-t-n-e-t/index.html">SYM_POSTNET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1119834318%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-o-s-t-n-e-t/index.html">SYM_POSTNET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1166872020%2FClasslikes%2F-755235848" anchor-label="SYM_QR" id="1166872020%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-q-r/index.html">SYM_QR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1166872020%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-q-r/index.html">SYM_QR</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1705803335%2FClasslikes%2F-755235848" anchor-label="SYM_RSS" id="1705803335%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-r-s-s/index.html">SYM_RSS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705803335%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-r-s-s/index.html">SYM_RSS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2009627092%2FClasslikes%2F-755235848" anchor-label="SYM_UPCA" id="-2009627092%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-u-p-c-a/index.html">SYM_UPCA</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2009627092%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-u-p-c-a/index.html">SYM_UPCA</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1518123096%2FClasslikes%2F-755235848" anchor-label="SYM_UPCE0" id="-1518123096%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-u-p-c-e0/index.html">SYM_UPCE0</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1518123096%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-u-p-c-e0/index.html">SYM_UPCE0</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="412107753%2FClasslikes%2F-755235848" anchor-label="SYM_UPCE1" id="412107753%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-u-p-c-e1/index.html">SYM_UPCE1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="412107753%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-u-p-c-e1/index.html">SYM_UPCE1</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-580664913%2FClasslikes%2F-755235848" anchor-label="SYM_ISBT" id="-580664913%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-i-s-b-t/index.html">SYM_ISBT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-580664913%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-i-s-b-t/index.html">SYM_ISBT</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1848514154%2FClasslikes%2F-755235848" anchor-label="SYM_BPO" id="-1848514154%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-b-p-o/index.html">SYM_BPO</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1848514154%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-b-p-o/index.html">SYM_BPO</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1469734043%2FClasslikes%2F-755235848" anchor-label="SYM_CANPOST" id="-1469734043%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-a-n-p-o-s-t/index.html">SYM_CANPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1469734043%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-a-n-p-o-s-t/index.html">SYM_CANPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-307188076%2FClasslikes%2F-755235848" anchor-label="SYM_AUSPOST" id="-307188076%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-a-u-s-p-o-s-t/index.html">SYM_AUSPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-307188076%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-a-u-s-p-o-s-t/index.html">SYM_AUSPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1730764923%2FClasslikes%2F-755235848" anchor-label="SYM_IATA25" id="1730764923%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-i-a-t-a25/index.html">SYM_IATA25</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1730764923%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-i-a-t-a25/index.html">SYM_IATA25</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1342283769%2FClasslikes%2F-755235848" anchor-label="SYM_CODABLOCK" id="1342283769%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-a-b-l-o-c-k/index.html">SYM_CODABLOCK</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1342283769%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-a-b-l-o-c-k/index.html">SYM_CODABLOCK</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1127241738%2FClasslikes%2F-755235848" anchor-label="SYM_JAPOST" id="1127241738%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-j-a-p-o-s-t/index.html">SYM_JAPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1127241738%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-j-a-p-o-s-t/index.html">SYM_JAPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="648110987%2FClasslikes%2F-755235848" anchor-label="SYM_PLANET" id="648110987%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-l-a-n-e-t/index.html">SYM_PLANET</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="648110987%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-l-a-n-e-t/index.html">SYM_PLANET</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2058179325%2FClasslikes%2F-755235848" anchor-label="SYM_DUTCHPOST" id="2058179325%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-d-u-t-c-h-p-o-s-t/index.html">SYM_DUTCHPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2058179325%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-d-u-t-c-h-p-o-s-t/index.html">SYM_DUTCHPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1953493944%2FClasslikes%2F-755235848" anchor-label="SYM_MSI" id="1953493944%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-m-s-i/index.html">SYM_MSI</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1953493944%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-m-s-i/index.html">SYM_MSI</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1093089154%2FClasslikes%2F-755235848" anchor-label="SYM_TLCODE39" id="-1093089154%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-t-l-c-o-d-e39/index.html">SYM_TLCODE39</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1093089154%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-t-l-c-o-d-e39/index.html">SYM_TLCODE39</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2084225269%2FClasslikes%2F-755235848" anchor-label="SYM_TRIOPTIC" id="2084225269%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-t-r-i-o-p-t-i-c/index.html">SYM_TRIOPTIC</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2084225269%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-t-r-i-o-p-t-i-c/index.html">SYM_TRIOPTIC</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="849604607%2FClasslikes%2F-755235848" anchor-label="SYM_CODE32" id="849604607%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e32/index.html">SYM_CODE32</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="849604607%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e32/index.html">SYM_CODE32</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1201820505%2FClasslikes%2F-755235848" anchor-label="SYM_STRT25" id="1201820505%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-s-t-r-t25/index.html">SYM_STRT25</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1201820505%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-s-t-r-t25/index.html">SYM_STRT25</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1950653705%2FClasslikes%2F-755235848" anchor-label="SYM_MATRIX25" id="-1950653705%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-m-a-t-r-i-x25/index.html">SYM_MATRIX25</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1950653705%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-m-a-t-r-i-x25/index.html">SYM_MATRIX25</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1532929358%2FClasslikes%2F-755235848" anchor-label="SYM_PLESSEY" id="-1532929358%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-l-e-s-s-e-y/index.html">SYM_PLESSEY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1532929358%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-l-e-s-s-e-y/index.html">SYM_PLESSEY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="483658476%2FClasslikes%2F-755235848" anchor-label="SYM_CHINAPOST" id="483658476%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-h-i-n-a-p-o-s-t/index.html">SYM_CHINAPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="483658476%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-h-i-n-a-p-o-s-t/index.html">SYM_CHINAPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1393140353%2FClasslikes%2F-755235848" anchor-label="SYM_KOREAPOST" id="-1393140353%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-k-o-r-e-a-p-o-s-t/index.html">SYM_KOREAPOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1393140353%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-k-o-r-e-a-p-o-s-t/index.html">SYM_KOREAPOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1804270564%2FClasslikes%2F-755235848" anchor-label="SYM_TELEPEN" id="1804270564%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-t-e-l-e-p-e-n/index.html">SYM_TELEPEN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1804270564%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-t-e-l-e-p-e-n/index.html">SYM_TELEPEN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1551576306%2FClasslikes%2F-755235848" anchor-label="SYM_CODE16K" id="-1551576306%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-d-e16-k/index.html">SYM_CODE16K</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1551576306%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-d-e16-k/index.html">SYM_CODE16K</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="419182773%2FClasslikes%2F-755235848" anchor-label="SYM_POSICODE" id="419182773%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-o-s-i-c-o-d-e/index.html">SYM_POSICODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="419182773%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-o-s-i-c-o-d-e/index.html">SYM_POSICODE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="11606086%2FClasslikes%2F-755235848" anchor-label="SYM_COUPONCODE" id="11606086%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-c-o-u-p-o-n-c-o-d-e/index.html">SYM_COUPONCODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="11606086%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-c-o-u-p-o-n-c-o-d-e/index.html">SYM_COUPONCODE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1661155737%2FClasslikes%2F-755235848" anchor-label="SYM_USPS4CB" id="-1661155737%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-u-s-p-s4-c-b/index.html">SYM_USPS4CB</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1661155737%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-u-s-p-s4-c-b/index.html">SYM_USPS4CB</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="846824340%2FClasslikes%2F-755235848" anchor-label="SYM_IDTAG" id="846824340%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-i-d-t-a-g/index.html">SYM_IDTAG</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="846824340%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-i-d-t-a-g/index.html">SYM_IDTAG</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="998468393%2FClasslikes%2F-755235848" anchor-label="SYM_LABEL" id="998468393%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-l-a-b-e-l/index.html">SYM_LABEL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="998468393%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-l-a-b-e-l/index.html">SYM_LABEL</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-323639790%2FClasslikes%2F-755235848" anchor-label="SYM_GS1_128" id="-323639790%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-g-s1_128/index.html">SYM_GS1_128</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-323639790%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-g-s1_128/index.html">SYM_GS1_128</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="124403419%2FClasslikes%2F-755235848" anchor-label="SYM_HANXIN" id="124403419%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-h-a-n-x-i-n/index.html">SYM_HANXIN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124403419%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-h-a-n-x-i-n/index.html">SYM_HANXIN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1712142522%2FClasslikes%2F-755235848" anchor-label="SYM_GRIDMATRIX" id="1712142522%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-g-r-i-d-m-a-t-r-i-x/index.html">SYM_GRIDMATRIX</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1712142522%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-g-r-i-d-m-a-t-r-i-x/index.html">SYM_GRIDMATRIX</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1065571837%2FClasslikes%2F-755235848" anchor-label="SYM_POSTALS" id="1065571837%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-p-o-s-t-a-l-s/index.html">SYM_POSTALS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1065571837%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-p-o-s-t-a-l-s/index.html">SYM_POSTALS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="341582303%2FClasslikes%2F-755235848" anchor-label="SYM_US_POSTALS1" id="341582303%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-u-s_-p-o-s-t-a-l-s1/index.html">SYM_US_POSTALS1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="341582303%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-u-s_-p-o-s-t-a-l-s1/index.html">SYM_US_POSTALS1</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1939811541%2FClasslikes%2F-755235848" anchor-label="SYM_DOTCODE" id="-1939811541%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-d-o-t-c-o-d-e/index.html">SYM_DOTCODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1939811541%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-d-o-t-c-o-d-e/index.html">SYM_DOTCODE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="331510171%2FClasslikes%2F-755235848" anchor-label="NUM_SYMBOLOGIES" id="331510171%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-u-m_-s-y-m-b-o-l-o-g-i-e-s/index.html">NUM_SYMBOLOGIES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="331510171%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-n-u-m_-s-y-m-b-o-l-o-g-i-e-s/index.html">NUM_SYMBOLOGIES</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1700670122%2FClasslikes%2F-755235848" anchor-label="SYM_ALL" id="-1700670122%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-togglable="ENTRY" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-y-m_-a-l-l/index.html">SYM_ALL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1700670122%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><div class="block"><a href="-s-y-m_-a-l-l/index.html">SYM_ALL</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-537158708%2FClasslikes%2F-755235848" anchor-label="Companion" id="-537158708%2FClasslikes%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-537158708%2FClasslikes%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div><div class="brief "><p class="paragraph">Provides the supported UI catalogue and firmware-ID lookup.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="-1113477214%2FProperties%2F-755235848" anchor-label="deprecated" id="-1113477214%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="deprecated.html"><span><span>deprecated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1113477214%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="deprecated.html">deprecated</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">True when current decoder firmware no longer supports the entry.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1334412984%2FProperties%2F-755235848" anchor-label="displayName" id="1334412984%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="display-name.html"><span>display</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1334412984%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="display-name.html">displayName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Human-readable name for settings screens.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="90348021%2FProperties%2F-755235848" anchor-label="entries" id="90348021%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="entries.html"><span><span>entries</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="90348021%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="entries.html">entries</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.enums/-enum-entries/index.html">EnumEntries</a><span class="token operator">&lt;</span><a href="index.html">ScannerSymbology</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a representation of an immutable list of all enum entries, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1447781690%2FProperties%2F-755235848" anchor-label="id" id="1447781690%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="id.html"><span><span>id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1447781690%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="id.html">id</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Firmware byte used in command 0x5D and the MENU_INFO array.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1250273680%2FProperties%2F-755235848" anchor-label="meta" id="1250273680%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="meta.html"><span><span>meta</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1250273680%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">val </span><a href="meta.html">meta</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">True for firmware control values that should not appear as individual formats.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-372974862%2FProperties%2F-755235848" anchor-label="name" id="-372974862%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-symbology-flag/-c-o-d-a-b-a-r_-c-o-n-c-a-t-e-n-a-t-e/index.html#-372974862%2FProperties%2F-755235848"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">val </span><a href="../-symbology-flag/-c-o-d-a-b-a-r_-c-o-n-c-a-t-e-n-a-t-e/index.html#-372974862%2FProperties%2F-755235848">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F-755235848" anchor-label="ordinal" id="-739389684%2FProperties%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-symbology-flag/-c-o-d-a-b-a-r_-c-o-n-c-a-t-e-n-a-t-e/index.html#-739389684%2FProperties%2F-755235848"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword">val </span><a href="../-symbology-flag/-c-o-d-a-b-a-r_-c-o-n-c-a-t-e-n-a-t-e/index.html#-739389684%2FProperties%2F-755235848">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="-26486329%2FFunctions%2F-755235848" anchor-label="valueOf" id="-26486329%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-26486329%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ScannerSymbology</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2012659949%2FFunctions%2F-755235848" anchor-label="values" id="-2012659949%2FFunctions%2F-755235848" data-filterable-set=":snapipc-sdk/commonMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":snapipc-sdk/commonMain" data-filterable-set=":snapipc-sdk/commonMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2012659949%2FFunctions%2F-755235848"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":snapipc-sdk/commonMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">ScannerSymbology</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
